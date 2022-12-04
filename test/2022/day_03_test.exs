@@ -1,6 +1,6 @@
 defmodule Day03Test do
   use ExUnit.Case
-  import AOC2022.Day03, only: [parse: 1, char_to_int: 1, p1: 1, p2: 1]
+  import AOC2022.Day03, only: [parse: 1, to_priority: 1, p1: 1, p2: 1]
 
   @puzzle_dir "lib/2022/day_03/"
   setup_all do
@@ -11,11 +11,15 @@ defmodule Day03Test do
      ]}
   end
 
-  test "char_to_int" do
-    assert char_to_int("a") == 1
-    assert char_to_int("z") == 26
-    assert char_to_int("A") == 27
-    assert char_to_int("Z") == 52
+  #test "parse", %{example_path: example_path} do
+  #  IO.inspect( parse(example_path) |> Enum.to_list, charlists: :as_lists )
+  #end
+
+  test "to_priority" do
+    assert to_priority(?a) == 1
+    assert to_priority(?z) == 26
+    assert to_priority(?A) == 27
+    assert to_priority(?Z) == 52
   end
 
   test "p1 - example", %{example_path: example_path} do
