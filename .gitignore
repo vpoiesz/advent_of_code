@@ -1,3 +1,6 @@
+# Probably shouldn't commit all these
+/lib/**/input.txt
+
 # The directory Mix will write compiled artifacts to.
 /_build/
 
