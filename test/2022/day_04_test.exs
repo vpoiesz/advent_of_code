@@ -1,4 +1,4 @@
-defmodule Day03Test do
+defmodule Day04Test do
   use ExUnit.Case
   import AOC2022.Day04, only: [
     #parse: 1,
